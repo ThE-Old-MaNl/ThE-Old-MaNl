@@ -45,7 +45,7 @@
 >
 > Engineered a responsive, terminal-themed portal designed to centralize blue team lab documentation, threat investigation write-ups, and incident response playbooks — built with privacy-first architecture and zero-telemetry design principles.
 >
-> **[🚀 LAUNCH PORTAL →](https://the-old-manl.github.io/)**
+> **[🚀 LAUNCH PORTAL →](https://the-old-manl.github.io//)**
 
 <br>
 
