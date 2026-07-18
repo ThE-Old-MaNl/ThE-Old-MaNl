@@ -33,6 +33,8 @@
 >
 > Architected a live Cloud SOC environment in Microsoft Azure. Deployed a deliberately vulnerable Windows Honeypot VM, engineered custom PowerShell scripts to extract and enrich RDP brute-force logs (Event ID 4625) with geolocation APIs, and visualized global attacker telemetry on an interactive Sentinel workbook dashboard.
 >
+> **MITRE ATT&CK:** `T1110: Brute Force` `T1078: Valid Accounts` `TA0008: Lateral Movement` `T1059: Command & Scripting`
+>
 > **[⚡ ACCESS OPERATION FILES →](https://github.com/ThE-Old-MaNl/Azure-SIEM-Honeypot)**
 
 <br>
