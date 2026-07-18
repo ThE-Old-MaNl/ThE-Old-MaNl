@@ -37,18 +37,11 @@
 
 ---
 
-### 📈 Telemetry & Activity
+### 📡 Current Operational Focus
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ThE-Old-MaNl&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" height="165" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThE-Old-MaNl&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" height="165" alt="Top Languages" />
-</div>
-
----
-
-<div align="center">
-  <p style="font-family: 'Fira Code', monospace; color: #8b949e; font-size: 12px;">
-    <code>sysctl -w net.ipv4.conf.all.log_martians=1</code> <br/>
-    🔒 <i>All systems monitored. Unauthorized access is strictly prohibited.</i>
-  </p>
-</div>
+```yaml
+[+] Active Status     : Online / Lab Environment Running
+[+] Primary Target    : Azure Cloud Infrastructure Hardening & Threat Triage
+[+] Core Tooling      : Microsoft Sentinel, Log Analytics, PowerShell, KQL, Git
+[+] Next Objective    : Developing custom detection engineering rules for MITRE ATT&CK TTPs
+```
