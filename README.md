@@ -1,47 +1,66 @@
 <div align="center">
 
-<!-- Typing Effect Header -->
+<!-- Terminal Header -->
 <a href="https://the-old-manl.github.io/">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=39D353&center=true&vCenter=true&width=650&lines=user%40kali%3A~%24+whoami;Aspiring+Cloud+SOC+Engineer+%26+Threat+Analyst;Building+Real-World+Blue+Team+Labs;Hunting+Threats+with+KQL+%26+Azure+Sentinel" alt="Typing SVG" />
 </a>
 
-<br/>
+<br><br>
 
-<!-- Tech Stack Shields -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure" />
-  <img src="https://img.shields.io/badge/Microsoft_Sentinel-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="Sentinel" />
-  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell" />
-  <img src="https://img.shields.io/badge/KQL-238636?style=for-the-badge&logo=kibana&logoColor=white" alt="KQL" />
-  <img src="https://img.shields.io/badge/OPSEC_Focused-0D1117?style=for-the-badge&logo=security&logoColor=39D353" alt="OPSEC" />
-</p>
+<!-- Unified Dark Shields -->
+<img src="https://img.shields.io/badge/Microsoft%20Azure-0D1117?style=for-the-badge&logo=microsoftazure&logoColor=0089D6&borderColor=30363D" alt="Azure" />
+<img src="https://img.shields.io/badge/Microsoft%20Sentinel-0D1117?style=for-the-badge&logo=microsoft&logoColor=0078D4&borderColor=30363D" alt="Sentinel" />
+<img src="https://img.shields.io/badge/PowerShell-0D1117?style=for-the-badge&logo=powershell&logoColor=5391FE&borderColor=30363D" alt="PowerShell" />
+<img src="https://img.shields.io/badge/KQL%20%2F%20Log%20Analytics-0D1117?style=for-the-badge&logo=kibana&logoColor=39D353&borderColor=30363D" alt="KQL" />
+<img src="https://img.shields.io/badge/OPSEC%20Focused-0D1117?style=for-the-badge&logo=security&logoColor=white&borderColor=30363D" alt="OPSEC" />
 
 </div>
 
----
+<br>
 
-### 🛡️ Operational Defense & Cloud SOC Labs
+## 🛡️ Featured Security & Defense Labs
 
-| Protocol / Project | Threat Domain | Architecture & Tech Stack | Telemetry & Evidence |
-| :--- | :--- | :--- | :--- |
-| **[Azure SIEM & Honeypot](https://github.com/ThE-Old-MaNl/Azure-SIEM-Honeypot)** | Cloud Intrusion & RDP Brute-Force | Azure Sentinel, VM Honeypot, PowerShell API Enrichment | [Live Attack Map](https://github.com/ThE-Old-MaNl/Azure-SIEM-Honeypot) |
-| **[Cybersecurity Portfolio](https://the-old-manl.github.io/)** | Centralized Security Knowledge Base | Tailwind CSS, HTML5, Terminal UI/UX Architecture | [Access Portal](https://the-old-manl.github.io/) |
+> ### 🖥️ [Azure Sentinel SIEM & Live Cyber Attack Map](https://github.com/ThE-Old-MaNl/Azure-SIEM-Honeypot)
+> `Cloud SOC` `Azure Sentinel` `PowerShell Automation` `KQL` `Threat Intel`  
+> Architected a live Cloud SOC environment in Microsoft Azure. Deployed a vulnerable Windows Honeypot VM, engineered a custom PowerShell script to extract and enrich RDP brute-force logs with geolocation APIs, and visualized global attacker telemetry on an interactive Sentinel dashboard.  
+> **[ ⚡ View Repository & Attack Map ](https://github.com/ThE-Old-MaNl/Azure-SIEM-Honeypot)**
 
----
+<br>
 
-### ⚙️ Core Technical Capabilities
+> ### 🌐 [Centralized Cybersecurity Portfolio](https://the-old-manl.github.io/)
+> `HTML5` `Tailwind CSS` `Terminal UI/UX` `OPSEC`  
+> Engineered a responsive, terminal-themed portal designed to showcase hands-on blue team labs, threat investigations, and incident response documentation without compromising operational privacy.  
+> **[ 🚀 Launch Live Portal ](https://the-old-manl.github.io/)**
 
-- **Cloud Security & SIEM:** Designing workspaces in Microsoft Azure, configuring Data Connectors, and writing custom Kusto Query Language (KQL) rules for anomaly detection.
-- **Threat Intelligence Enrichment:** Developing automation scripts in PowerShell to parse Event Viewer logs (Event ID 4625), extract IOCs, and map attacker geolocation data via external APIs.
-- **Security Operations (SOC):** Log ingestion, firewall (NSG) rule manipulation, incident triage, and documentation of full-cycle attack investigations.
+<br>
 
----
+<!-- 
+=============================================================================
+EASY EXPANSION AREA: When you want to add your future projects, simply copy 
+the blockquote format below, paste it right above this comment, and fill it in!
+=============================================================================
+> ### 🔒 [Your Next Project Title Here](Link)
+> `Tag 1` `Tag 2` `Tag 3`  
+> Short description of what you built, what tools you used, and what you learned.  
+> **[ 🔗 View Project ](Link)**
+<br>
+-->
 
-### 📡 Current Operational Focus
+## ⚙️ Operational Architecture & Skills
 
 ```yaml
-[+] Active Status     : Online / Lab Environment Running
-[+] Primary Target    : Azure Cloud Infrastructure Hardening & Threat Triage
-[+] Core Tooling      : Microsoft Sentinel, Log Analytics, PowerShell, KQL, Git
-[+] Next Objective    : Developing custom detection engineering rules for MITRE ATT&CK TTPs
+[Cloud Security & SIEM]
+  - Designing and hardening Azure Workspaces & Data Connectors
+  - Writing custom Kusto Query Language (KQL) detection rules
+  - Analyzing live telemetry for brute-force and anomalous activities
+
+[Threat Intelligence & Automation]
+  - Scripting automated log extraction using Windows PowerShell
+  - Parsing Event ID 4625 (Failed Logins) and mapping IOCs
+  - Integrating external geolocation APIs for threat actor profiling
+
+[Security Operations (SOC)]
+  - Network Security Group (NSG) firewall rule manipulation
+  - Full-cycle incident triage, investigation, and reporting
+  - Linux & Windows system engineering and command-line proficiency
 ```
