@@ -1,0 +1,123 @@
+<svg fill="none" viewBox="0 0 850 90" width="850" height="90" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        .sig {
+          width: 850px;
+          height: 90px;
+          background: #0D1117;
+          border: 1px solid #30363d;
+          border-radius: 8px;
+          font-family: 'Courier New', Courier, monospace;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          overflow: hidden;
+        }
+
+        /* ── Top glow line ── */
+        .glow {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 200px;
+          height: 1px;
+          background: linear-gradient(90deg, transparent, #ff1744, transparent);
+          animation: gpulse 3s infinite;
+        }
+
+        @keyframes gpulse {
+          0%, 100% { opacity: 0.3; width: 200px; }
+          50%      { opacity: 1;   width: 400px; }
+        }
+
+        /* ── Signal line ── */
+        .sig-line {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          margin-bottom: 8px;
+        }
+
+        .sig-dash {
+          width: 18px;
+          height: 1px;
+          background: #30363d;
+        }
+
+        .sig-wave {
+          color: #ff1744;
+          font-size: 12px;
+          animation: wave 2s infinite;
+          letter-spacing: 1px;
+        }
+
+        @keyframes wave {
+          0%, 100% { opacity: 1; }
+          50%      { opacity: 0.3; }
+        }
+
+        .sig-txt {
+          font-size: 9px;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          color: #ff1744;
+          animation: flicker 5s infinite;
+        }
+
+        @keyframes flicker {
+          0%, 93%, 95%, 97%, 100% { opacity: 1; }
+          94%                     { opacity: 0.2; }
+          96%                     { opacity: 0.8; }
+          98%                     { opacity: 0.3; }
+        }
+
+        /* ── Security notice ── */
+        .sig-notice {
+          font-size: 10px;
+          color: #8b949e;
+        }
+
+        .sig-lock {
+          color: #39D353;
+        }
+
+        /* ── Accessibility ── */
+        @media (prefers-reduced-motion: reduce) {
+          * { animation: none !important; }
+        }
+      </style>
+
+      <div class="sig">
+        <div class="glow"></div>
+
+        <div class="sig-line">
+          <div class="sig-dash"></div>
+          <div class="sig-dash"></div>
+          <div class="sig-dash"></div>
+          <span class="sig-wave">&#x2584;&#x2580;&#x2584;&#x2580;&#x2584;</span>
+          <div class="sig-dash"></div>
+          <span class="sig-txt">signal encrypted</span>
+          <div class="sig-dash"></div>
+          <span class="sig-wave">&#x2584;&#x2580;&#x2584;&#x2580;&#x2584;</span>
+          <div class="sig-dash"></div>
+          <div class="sig-dash"></div>
+          <div class="sig-dash"></div>
+        </div>
+
+        <div class="sig-notice">
+          <span class="sig-lock">&#x25C6;</span> All systems monitored. Unauthorized access is strictly prohibited.
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

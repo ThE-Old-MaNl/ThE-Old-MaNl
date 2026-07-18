@@ -1,0 +1,235 @@
+<svg fill="none" viewBox="0 0 850 310" width="850" height="310" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        .mx {
+          width: 850px;
+          height: 310px;
+          background: #0D1117;
+          border: 1px solid #30363d;
+          border-radius: 8px;
+          font-family: 'Courier New', Courier, monospace;
+          color: #c9d1d9;
+          position: relative;
+          overflow: hidden;
+        }
+
+        /* ── Header bar ── */
+        .mx-hdr {
+          padding: 12px 20px;
+          background: #161b22;
+          border-bottom: 1px solid #30363d;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .mx-title {
+          font-size: 11px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #ff1744;
+        }
+
+        .mx-status {
+          font-size: 10px;
+          color: #39D353;
+          animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+          0%, 100% { opacity: 1; }
+          50%      { opacity: 0.4; }
+        }
+
+        /* ── Body ── */
+        .mx-body {
+          padding: 18px 22px;
+        }
+
+        /* ── Skill rows ── */
+        .sk-row {
+          display: flex;
+          align-items: center;
+          margin-bottom: 14px;
+          opacity: 0;
+          animation: slideIn 0.4s ease-out forwards;
+        }
+
+        .sk-row:nth-child(1) { animation-delay: 0.2s; }
+        .sk-row:nth-child(2) { animation-delay: 0.4s; }
+        .sk-row:nth-child(3) { animation-delay: 0.6s; }
+        .sk-row:nth-child(4) { animation-delay: 0.8s; }
+        .sk-row:nth-child(5) { animation-delay: 1.0s; }
+
+        @keyframes slideIn {
+          from { opacity: 0; transform: translateX(-10px); }
+          to   { opacity: 1; transform: translateX(0); }
+        }
+
+        .sk-dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #ff1744;
+          margin-right: 12px;
+          flex-shrink: 0;
+          animation: pulse 1.5s infinite;
+        }
+
+        .sk-name {
+          width: 260px;
+          font-size: 11px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #8b949e;
+          flex-shrink: 0;
+        }
+
+        /* ── Progress bars ── */
+        .sk-track {
+          flex: 1;
+          height: 10px;
+          background: #21262d;
+          border-radius: 2px;
+          overflow: hidden;
+          position: relative;
+          margin: 0 12px;
+        }
+
+        .sk-fill {
+          height: 100%;
+          border-radius: 2px;
+          background: linear-gradient(90deg, #ff1744, #ff5252);
+          width: 0%;
+        }
+
+        .sk-fill.f1 { animation: fill92 1.5s 0.6s ease-out forwards; }
+        .sk-fill.f2 { animation: fill88 1.5s 0.8s ease-out forwards; }
+        .sk-fill.f3 { animation: fill85 1.5s 1.0s ease-out forwards; }
+        .sk-fill.f4 { animation: fill80 1.5s 1.2s ease-out forwards; }
+        .sk-fill.f5 { animation: fill78 1.5s 1.4s ease-out forwards; }
+
+        @keyframes fill92 { to { width: 92%; } }
+        @keyframes fill88 { to { width: 88%; } }
+        @keyframes fill85 { to { width: 85%; } }
+        @keyframes fill80 { to { width: 80%; } }
+        @keyframes fill78 { to { width: 78%; } }
+
+        /* ── Red scanner sweep ── */
+        .sk-scanner {
+          position: absolute;
+          top: 0;
+          left: -40%;
+          width: 40%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent, rgba(255, 23, 68, 0.25), transparent);
+          animation: sweep 3s 2.5s infinite;
+        }
+
+        @keyframes sweep {
+          from { left: -40%; }
+          to   { left: 140%; }
+        }
+
+        .sk-pct {
+          font-size: 12px;
+          color: #ff1744;
+          font-weight: bold;
+          width: 36px;
+          text-align: right;
+          flex-shrink: 0;
+        }
+
+        /* ── Bottom gradient ── */
+        .mx-floor {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 24px;
+          background: linear-gradient(transparent, rgba(255, 23, 68, 0.02));
+          border-top: 1px solid #21262d;
+        }
+
+        /* ── Accessibility ── */
+        @media (prefers-reduced-motion: reduce) {
+          * { animation: none !important; }
+          .sk-row { opacity: 1 !important; }
+          .sk-fill.f1 { width: 92% !important; }
+          .sk-fill.f2 { width: 88% !important; }
+          .sk-fill.f3 { width: 85% !important; }
+          .sk-fill.f4 { width: 80% !important; }
+          .sk-fill.f5 { width: 78% !important; }
+        }
+      </style>
+
+      <div class="mx">
+        <div class="mx-hdr">
+          <span class="mx-title">&#x25C9; subsystem diagnostics &#x2014; capability matrix</span>
+          <span class="mx-status">&#x25CF; SCANNING</span>
+        </div>
+
+        <div class="mx-body">
+          <div class="sk-row">
+            <div class="sk-dot"></div>
+            <div class="sk-name">Cloud Security &amp; SIEM</div>
+            <div class="sk-track">
+              <div class="sk-fill f1"></div>
+              <div class="sk-scanner"></div>
+            </div>
+            <div class="sk-pct">92%</div>
+          </div>
+
+          <div class="sk-row">
+            <div class="sk-dot"></div>
+            <div class="sk-name">PowerShell Scripting</div>
+            <div class="sk-track">
+              <div class="sk-fill f2"></div>
+              <div class="sk-scanner"></div>
+            </div>
+            <div class="sk-pct">88%</div>
+          </div>
+
+          <div class="sk-row">
+            <div class="sk-dot"></div>
+            <div class="sk-name">Threat Intel &amp; Automation</div>
+            <div class="sk-track">
+              <div class="sk-fill f3"></div>
+              <div class="sk-scanner"></div>
+            </div>
+            <div class="sk-pct">85%</div>
+          </div>
+
+          <div class="sk-row">
+            <div class="sk-dot"></div>
+            <div class="sk-name">SOC Operations</div>
+            <div class="sk-track">
+              <div class="sk-fill f4"></div>
+              <div class="sk-scanner"></div>
+            </div>
+            <div class="sk-pct">80%</div>
+          </div>
+
+          <div class="sk-row">
+            <div class="sk-dot"></div>
+            <div class="sk-name">Windows / Linux Hardening</div>
+            <div class="sk-track">
+              <div class="sk-fill f5"></div>
+              <div class="sk-scanner"></div>
+            </div>
+            <div class="sk-pct">78%</div>
+          </div>
+        </div>
+
+        <div class="mx-floor"></div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

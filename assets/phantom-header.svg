@@ -1,0 +1,298 @@
+<svg fill="none" viewBox="0 0 850 370" width="850" height="370" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        .terminal {
+          width: 850px;
+          height: 370px;
+          background: #0D1117;
+          border: 1px solid rgba(255, 23, 68, 0.4);
+          border-radius: 8px;
+          font-family: 'Courier New', Courier, monospace;
+          color: #c9d1d9;
+          position: relative;
+          overflow: hidden;
+        }
+
+        /* ── Scanline sweep ── */
+        .scanline {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background: linear-gradient(180deg, transparent, rgba(255, 23, 68, 0.12), transparent);
+          animation: scanmove 4s linear infinite;
+          z-index: 10;
+          pointer-events: none;
+        }
+
+        @keyframes scanmove {
+          0%   { top: -4px; }
+          100% { top: 370px; }
+        }
+
+        /* ── CRT line overlay ── */
+        .crt {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: repeating-linear-gradient(
+            transparent 0px,
+            transparent 2px,
+            rgba(0, 0, 0, 0.08) 2px,
+            rgba(0, 0, 0, 0.08) 4px
+          );
+          z-index: 5;
+          pointer-events: none;
+        }
+
+        /* ── Corner brackets ── */
+        .corner {
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          z-index: 2;
+        }
+
+        .c-tl { top: 38px; left: 2px; border-top: 2px solid #ff1744; border-left: 2px solid #ff1744; }
+        .c-tr { top: 38px; right: 2px; border-top: 2px solid #ff1744; border-right: 2px solid #ff1744; }
+        .c-bl { bottom: 2px; left: 2px; border-bottom: 2px solid #ff1744; border-left: 2px solid #ff1744; }
+        .c-br { bottom: 2px; right: 2px; border-bottom: 2px solid #ff1744; border-right: 2px solid #ff1744; }
+
+        /* ── Title bar ── */
+        .titlebar {
+          display: flex;
+          align-items: center;
+          padding: 10px 16px;
+          background: #161b22;
+          border-bottom: 1px solid #30363d;
+          position: relative;
+          z-index: 1;
+        }
+
+        .dots {
+          display: flex;
+          gap: 6px;
+          margin-right: 14px;
+        }
+
+        .dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+        }
+
+        .d-r { background: #ff1744; }
+        .d-y { background: #ffab00; }
+        .d-g { background: #39D353; }
+
+        .ttl {
+          color: #8b949e;
+          font-size: 11px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          animation: glitch 6s infinite;
+        }
+
+        @keyframes glitch {
+          0%, 88%, 92%, 96%, 100% {
+            transform: none;
+            text-shadow: none;
+          }
+          89% {
+            transform: skewX(-2deg);
+            text-shadow: 2px 0 #ff1744, -2px 0 #39D353;
+          }
+          91% {
+            transform: skewX(1deg);
+            text-shadow: -1px 0 #ff1744, 1px 0 #39D353;
+          }
+          93% {
+            transform: skewX(-1deg);
+            text-shadow: 1px 0 #ff1744, -1px 0 #39D353;
+          }
+          95% {
+            transform: none;
+            text-shadow: none;
+          }
+        }
+
+        /* ── Body content ── */
+        .body {
+          padding: 18px 22px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .line {
+          font-size: 13px;
+          line-height: 2;
+          opacity: 0;
+          animation: fadein 0.4s ease forwards;
+        }
+
+        .line:nth-child(1) { animation-delay: 0.3s; }
+        .line:nth-child(2) { animation-delay: 0.7s; }
+        .line:nth-child(3) { animation-delay: 1.1s; }
+        .line:nth-child(4) { animation-delay: 1.5s; }
+        .line:nth-child(5) { animation-delay: 1.9s; }
+
+        @keyframes fadein {
+          from { opacity: 0; transform: translateX(-8px); }
+          to   { opacity: 1; transform: translateX(0); }
+        }
+
+        /* ── Text color tokens ── */
+        .g  { color: #39D353; }
+        .r  { color: #ff1744; }
+        .gr { color: #8b949e; }
+        .w  { color: #e6edf3; }
+        .rb { color: #ff1744; font-weight: bold; }
+
+        /* ── Identity card ── */
+        .card {
+          margin-top: 14px;
+          border: 1px solid #30363d;
+          border-left: 3px solid #ff1744;
+          padding: 12px 16px;
+          background: rgba(255, 23, 68, 0.03);
+          border-radius: 0 4px 4px 0;
+          opacity: 0;
+          animation: fadein 0.5s 2.3s forwards;
+        }
+
+        .card-line {
+          font-size: 12px;
+          line-height: 1.9;
+        }
+
+        .cl {
+          color: #ff1744;
+          font-size: 11px;
+          letter-spacing: 1px;
+        }
+
+        .cv { color: #e6edf3; }
+
+        /* ── Status bar ── */
+        .sbar {
+          margin-top: 12px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          opacity: 0;
+          animation: fadein 0.5s 2.7s forwards;
+        }
+
+        .sbar-label {
+          font-size: 12px;
+          color: #8b949e;
+        }
+
+        .track {
+          width: 220px;
+          height: 8px;
+          background: #21262d;
+          border-radius: 4px;
+          overflow: hidden;
+        }
+
+        .fill {
+          height: 100%;
+          width: 0%;
+          background: linear-gradient(90deg, #ff1744, #ff5252, #39D353);
+          border-radius: 4px;
+          animation: barfill 1.5s 3s ease-out forwards;
+        }
+
+        @keyframes barfill {
+          from { width: 0%; }
+          to   { width: 100%; }
+        }
+
+        .online {
+          font-size: 12px;
+          color: #39D353;
+          font-weight: bold;
+          animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+          0%, 100% { opacity: 1; }
+          50%      { opacity: 0.4; }
+        }
+
+        /* ── Blinking cursor ── */
+        .cursor {
+          display: inline-block;
+          width: 7px;
+          height: 13px;
+          background: #39D353;
+          animation: blink 1s step-end infinite;
+          vertical-align: text-bottom;
+          margin-left: 2px;
+        }
+
+        @keyframes blink {
+          0%, 50%  { opacity: 1; }
+          51%, 100% { opacity: 0; }
+        }
+
+        /* ── Accessibility ── */
+        @media (prefers-reduced-motion: reduce) {
+          * { animation: none !important; }
+          .line, .card, .sbar { opacity: 1 !important; }
+          .fill { width: 100% !important; }
+        }
+      </style>
+
+      <div class="terminal">
+        <div class="scanline"></div>
+        <div class="crt"></div>
+        <div class="corner c-tl"></div>
+        <div class="corner c-tr"></div>
+        <div class="corner c-bl"></div>
+        <div class="corner c-br"></div>
+
+        <div class="titlebar">
+          <div class="dots">
+            <div class="dot d-r"></div>
+            <div class="dot d-y"></div>
+            <div class="dot d-g"></div>
+          </div>
+          <span class="ttl">phantom-os v7.0 &#x2014; threat defense hud</span>
+        </div>
+
+        <div class="body">
+          <div class="line"><span class="gr">root@phantom:~$</span> <span class="g">./init_defense_protocol.sh</span></div>
+          <div class="line"><span class="g">[&#x2713;]</span> <span class="w">Loading kernel modules</span> <span class="gr">....................</span> <span class="g">OK</span></div>
+          <div class="line"><span class="g">[&#x2713;]</span> <span class="w">Initializing cloud SOC engine</span> <span class="gr">...........</span> <span class="g">OK</span></div>
+          <div class="line"><span class="g">[&#x2713;]</span> <span class="w">Deploying threat detection arrays</span> <span class="gr">.......</span> <span class="g">OK</span></div>
+          <div class="line"><span class="rb">[&#x25B6;]</span> <span class="w">Establishing encrypted channel</span> <span class="gr">.........</span> <span class="rb">ACTIVE</span><span class="cursor"></span></div>
+
+          <div class="card">
+            <div class="card-line"><span class="cl">IDENTITY&#160;&#160;</span> <span class="cv">Cloud SOC Engineer &amp; Threat Analyst</span></div>
+            <div class="card-line"><span class="cl">DIVISION&#160;&#160;</span> <span class="cv">Blue Team Operations &#x2014; Defensive Security</span></div>
+            <div class="card-line"><span class="cl">CLEARANCE&#160;</span> <span class="cv">OPSEC-CLASSIFIED</span></div>
+            <div class="card-line"><span class="cl">DIRECTIVE&#160;</span> <span class="cv">Hunt. Detect. Contain. Eliminate.</span></div>
+          </div>
+
+          <div class="sbar">
+            <span class="sbar-label">SYSTEM STATUS:</span>
+            <div class="track"><div class="fill"></div></div>
+            <span class="online">&#x25CF; ONLINE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
