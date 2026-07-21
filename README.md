@@ -116,29 +116,11 @@
 ---
 
 <div align="center">
-  <h2>📊 <code>SYSTEM METRICS</code></h2>
-  <br>
-  <a href="https://github.com/ThE-Old-MaNl">
-    <img src="https://github-readme-stats.vercel.app/api?username=ThE-Old-MaNl&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00ff88&icon_color=ff1744&text_color=c9d1d9&ring_color=ff1744" width="49%" alt="GitHub Stats" />
-  </a>
-  <a href="https://github.com/ThE-Old-MaNl">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=ThE-Old-MaNl&theme=tokyonight&hide_border=true&background=0D1117&stroke=30363d&ring=ff1744&fire=ff1744&currStreakLabel=00ff88&sideLabels=c9d1d9&dates=8b949e&currStreakNum=00ff88&sideNums=00ff88" width="49%" alt="GitHub Streak" />
-  </a>
-  <br><br>
-  <a href="https://github.com/ThE-Old-MaNl">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThE-Old-MaNl&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00ff88&text_color=c9d1d9&langs_count=8" width="42%" alt="Top Languages" />
-  </a>
-</div>
-
----
-
-<div align="center">
   <h2>📬 <code>SECURE COMMS UPLINK</code></h2>
   <br>
   <a href="https://the-old-manl.github.io/"><img src="https://img.shields.io/badge/Portfolio-111b2e?style=for-the-badge&logo=googlechrome&logoColor=22d3ee" alt="Portfolio"></a>
-  <a href="https://github.com/ThE-Old-MaNl"><img src="https://img.shields.io/badge/GitHub-111b2e?style=for-the-badge&logo=github&logoColor=00ff88" alt="GitHub"></a>
   <a href="https://www.linkedin.com/in/abdessamad-jedd/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:abdessamadjedd5@gmail.com"><img src="https://img.shields.io/badge/Email-111b2e?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"></a>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abdessamadjedd5@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-111b2e?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"></a>
   <br><br>
   <!-- PHANTOM-OS — Animated Signal Footer -->
   <img src="./assets/signal-footer.svg" width="100%" alt="Signal Encrypted" />
