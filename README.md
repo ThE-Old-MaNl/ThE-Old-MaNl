@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://the-old-manl.github.io/">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=00ff88&center=true&vCenter=true&width=650&lines=phantom-os%40soc%3A~%24+whoami;AI-Powered+DevSecOps+Engineer;Senior+SOC+Analyst+%7C+Blue+Team+Operator;SOAR+Architect+%7C+Threat+Intelligence" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=00ff88&center=true&vCenter=true&width=650&lines=phantom-os%40soc%3A~%24+whoami;AI-Powered+DevSecOps+Engineer;Cybersecurity+Student+%26+Pentester;SOC+Analyst+%7C+Threat+Intelligence" alt="Typing SVG" />
 </a>
 
 <br>
