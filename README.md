@@ -138,7 +138,7 @@
   <a href="https://the-old-manl.github.io/"><img src="https://img.shields.io/badge/Portfolio-111b2e?style=for-the-badge&logo=googlechrome&logoColor=22d3ee" alt="Portfolio"></a>
   <a href="https://github.com/ThE-Old-MaNl"><img src="https://img.shields.io/badge/GitHub-111b2e?style=for-the-badge&logo=github&logoColor=00ff88" alt="GitHub"></a>
   <a href="https://www.linkedin.com/in/abdessamad-jedd/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:abdessamadjedd1@gmail.com"><img src="https://img.shields.io/badge/Email-111b2e?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"></a>
+  <a href="mailto:abdessamadjedd5@gmail.com"><img src="https://img.shields.io/badge/Email-111b2e?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"></a>
   <br><br>
   <!-- PHANTOM-OS — Animated Signal Footer -->
   <img src="./assets/signal-footer.svg" width="100%" alt="Signal Encrypted" />
