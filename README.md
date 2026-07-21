@@ -39,11 +39,18 @@
 ### Programming & Scripting
 <p>
   <img src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=3776AB" alt="Python" />
-  <img src="https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
   <img src="https://img.shields.io/badge/PowerShell-0D1117?style=for-the-badge&logo=powershell&logoColor=5391FE" alt="PowerShell" />
-  <img src="https://img.shields.io/badge/KQL-0D1117?style=for-the-badge&logo=azuredataexplorer&logoColor=0078D4" alt="KQL" />
   <img src="https://img.shields.io/badge/Bash-0D1117?style=for-the-badge&logo=gnubash&logoColor=4EAA25" alt="Bash" />
   <img src="https://img.shields.io/badge/SQL-0D1117?style=for-the-badge&logo=postgresql&logoColor=4169E1" alt="SQL" />
+</p>
+
+### Offensive Security & Tools
+<p>
+  <img src="https://img.shields.io/badge/Wireshark-0D1117?style=for-the-badge&logo=wireshark&logoColor=1679A7" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/Nmap-0D1117?style=for-the-badge&logo=kalilinux&logoColor=557C94" alt="Nmap" />
+  <img src="https://img.shields.io/badge/Metasploit-0D1117?style=for-the-badge&logo=metasploit&logoColor=1F68A9" alt="Metasploit" />
+  <img src="https://img.shields.io/badge/Nessus-0D1117?style=for-the-badge&logo=tenable&logoColor=0080B8" alt="Nessus" />
+  <img src="https://img.shields.io/badge/Hashcat-0D1117?style=for-the-badge&logo=hackthebox&logoColor=9FEF00" alt="Hashcat" />
 </p>
 
 ### AI & LLMs
