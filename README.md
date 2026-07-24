@@ -21,6 +21,7 @@
 ### SIEM & SOAR
 <p>
   <img src="https://img.shields.io/badge/Microsoft%20Sentinel-0D1117?style=for-the-badge&logo=microsoft&logoColor=0078D4" alt="Sentinel" />
+  <img src="https://img.shields.io/badge/Wazuh-0D1117?style=for-the-badge&logo=wazuh&logoColor=3C82F8" alt="Wazuh" />
   <img src="https://img.shields.io/badge/n8n-0D1117?style=for-the-badge&logo=n8n&logoColor=EA4B71" alt="n8n" />
   <img src="https://img.shields.io/badge/Splunk-0D1117?style=for-the-badge&logo=splunk&logoColor=00C176" alt="Splunk" />
   <img src="https://img.shields.io/badge/Elastic%20Stack-0D1117?style=for-the-badge&logo=elastic&logoColor=005571" alt="Elastic" />
@@ -101,7 +102,23 @@
 
 <br>
 
-### 🟢 `[OP-003]` Cyber-Portal — Personal Security Portfolio
+### 🔴 `[OP-003]` Wazuh SOAR — SSH Brute-Force Active Defense Pipeline
+> **Classification:** `CRITICAL` ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ **100%**
+>
+> **Stack:** `Wazuh SIEM` `n8n` `Bash` `iptables` `Discord Webhooks`
+>
+> End-to-end SOAR pipeline detecting real-time SSH brute-force attacks via Wazuh, automatically blocking attacker IPs at the firewall level through Active Response, and dispatching formatted SOC alerts to Discord via a custom webhook integration and n8n workflow automation — fully automated, zero analyst effort.
+>
+> **Impact:** Attacker IPs blocked in **real-time** · Automated Active Response firewall rules · Instant Discord SOC visibility
+>
+> **MITRE ATT&CK:** `T1110: Brute Force` • `T1059: Command & Scripting` • `T1071: Application Layer Protocol`
+>
+> <br>
+> <a href="https://github.com/ThE-Old-MaNl/Wazuh-SOAR-Pipeline"><img src="https://img.shields.io/badge/⚡_ACCESS_OPERATION_FILES-05080f?style=for-the-badge&logo=github&logoColor=00ff88" alt="Access"></a>
+
+<br>
+
+### 🟢 `[OP-004]` Cyber-Portal — Personal Security Portfolio
 > **Classification:** `STANDARD` ▓▓▓▓▓▓▓▓▓▓░░░░░░ **65%**
 >
 > **Stack:** `HTML5` `CSS3` `JavaScript` `GitHub Pages`
